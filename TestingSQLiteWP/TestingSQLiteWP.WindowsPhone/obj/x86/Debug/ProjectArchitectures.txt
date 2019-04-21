@@ -1,0 +1,1 @@
+D:\My Soft\WorkingSpace\Apps\TestingSQLiteWP\TestingSQLiteWP\TestingSQLiteWP.WindowsPhone\TestingSQLiteWP.WindowsPhone.csproj;x86

@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="TestingSQLiteWP.TestPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TestingSQLiteWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.BottomAppBar>
+        <CommandBar IsSticky="True" x:Name="appBar">
+            <CommandBar.PrimaryCommands> 
+                <AppBarButton Name="appbarSave" Icon="Save" IsCompact="False" Label="Add Note" Click="appbarSave_Click"/>
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+    
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="[Test]" FontSize="18" FontWeight ="Bold" Foreground="White" Margin="15,35,15,5"/>
+            <StackPanel Height="2" Background="White" Margin="15,7,15,10" VerticalAlignment="Top" />
+
+            <StackPanel Margin="15,10,15,5" Background="Transparent">
+                <TextBlock Foreground="White" Text="Name" FontWeight="Bold" />
+                <TextBox Foreground="Black" Name="txtname" BorderBrush="White" />
+            </StackPanel>
+            
+            <StackPanel Margin="15,10,15,5" Background="Transparent">
+                <TextBlock Foreground="White" Text="Path" FontWeight="Bold" />
+                <TextBox Foreground="Black" Name="txtpath" BorderBrush="White" />
+            </StackPanel>
+            
+            <Button Name="btnLoadImage" Margin="15,10,15,5" BorderThickness="2"  Content="Select photo (optional)" Click="btnLoadImage_Click" HorizontalAlignment="Stretch" />
+                    <Border BorderThickness="1" BorderBrush="White" Margin="15,5,15,5" Background="Transparent" Height="225">
+                        <Image Name="imgPhoto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="Fill"  />
+                    </Border>  
+        </StackPanel>
+    </Grid>
+</Page>
